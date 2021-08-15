@@ -5,8 +5,7 @@ document.getElementById("loginBtn").addEventListener("click", function () {
   const PassInput = document.getElementById("PassInput");
   const userPass = PassInput.value;
 
-  if (userGmail == "azad" && userPass == "tamal") {
-    console.log("hiiiiii");
+  if (userGmail == "azad@gmail.com" && userPass == "tamal") {
     window.location.href = "bank.html";
   }
 });
