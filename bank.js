@@ -6,8 +6,6 @@ document
     const newDepositAmount2 = parseFloat(newDepositAmount);
 
     const depositTotal = document.getElementById("depositTotal");
-    // depositTotal.innerText = depositAmount;
-
     const previousDeposit = depositTotal.innerText;
     const previousDeposit2 = parseFloat(previousDeposit);
 
@@ -15,4 +13,12 @@ document
     depositTotal.innerText = newDeposit;
 
     depositInput.value = "";
+
+    // ---------------
+
+    const balanceTotal = document.getElementById("balanceTotal");
+    const previousBalance = balanceTotal.innerText;
+    const previousBalance2 = parseFloat(previousBalance);
+    const total = previousBalance2 + newDepositAmount2;
+    balanceTotal.innerText = total;
   });
